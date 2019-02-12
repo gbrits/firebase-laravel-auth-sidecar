@@ -1,6 +1,6 @@
 <?php
 
-namespace Vinkas\Firebase\Auth;
+namespace Gbrits\Firebase\Auth;
 
 use Illuminate\Support\ServiceProvider as BaseServiceProvider;
 
@@ -14,7 +14,7 @@ class ServiceProvider extends BaseServiceProvider {
   public function boot()
   {
     $this->publishes([
-      __DIR__.'/config/firebase.php' => config_path('vinkas/firebase/auth.php'),
+      __DIR__.'/config/firebase.php' => config_path('gbrits/firebase/auth.php'),
     ], 'config');
 
     $this->publishes([
@@ -22,15 +22,15 @@ class ServiceProvider extends BaseServiceProvider {
     ], 'migrations');
 
     $this->publishes([
-        __DIR__.'/assets' => public_path('vinkas/firebase'),
+        __DIR__.'/assets' => public_path('gbrits/firebase'),
     ], 'public');
 
     $this->publishes([
-        __DIR__.'/resources/views' => resource_path('views/vinkas/firebase'),
+        __DIR__.'/resources/views' => resource_path('views/gbrits/firebase'),
     ], 'views');
 
     $this->publishes([
-        __DIR__.'/resources/lang' => resource_path('lang/vinkas/firebase'),
+        __DIR__.'/resources/lang' => resource_path('lang/gbrits/firebase'),
     ], 'lang');
   }
 
