@@ -1,9 +1,13 @@
 <?php
 
+/**
+ * Adding some Firebase related fields to your existing Laravel implementation
+ */
+
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateFirebaseUsersTable extends Migration
+class AddFirebaseColumnsToUsersTable extends Migration
 {
     /**
      * Run the migrations.
@@ -12,13 +16,10 @@ class CreateFirebaseUsersTable extends Migration
      */
     public function up()
     {
-        Schema::create('firebase_users', function (Blueprint $table) {
-            $table->string('id')->primary();
-            $table->string('name')->nullable();
-            $table->string('email')->nullable()->unique();
-            $table->string('photo_url')->nullable();
-            $table->rememberToken();
-            $table->timestamps();
+        Schema::table('users', function (Blueprint $table) {
+          $table->string('firebase_uid')->nullable();
+          $table->string('name')->nullable();
+          $table->string('photo_url')->nullable();
         });
     }
 
@@ -29,6 +30,10 @@ class CreateFirebaseUsersTable extends Migration
      */
     public function down()
     {
-        Schema::drop('firebase_users');
+        Schema::table('ppe', function (Blueprint $table) {
+            $table->dropColumn('firebase_uid');
+            $table->dropColumn('name');
+            $table->dropColumn('photo_url');
+        });
     }
 }
