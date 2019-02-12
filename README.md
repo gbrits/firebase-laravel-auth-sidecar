@@ -33,7 +33,7 @@ Gbrits\Firebase\Auth\ServiceProvider::class,
 php artisan vendor:publish --provider="Gbrits\Firebase\Auth\ServiceProvider"
 ```
 
-**Add some routes**
+**Add some routes to `web.php`**
 
 ```
 Route::get('auth', 'Auth\AuthController@getAuth')->name('getAuth');
