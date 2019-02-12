@@ -36,9 +36,9 @@ php artisan vendor:publish --provider="Gbrits\Firebase\Auth\ServiceProvider"
 **Add some routes to `web.php`**
 
 ```
-Route::get('auth', 'Auth\AuthController@getAuth')->name('getAuth');
-Route::post('auth', 'Auth\AuthController@postAuth')->name('postAuth');
-Route::get('logout', 'Auth\AuthController@logout')->name('logout');
+Route::get('auth', 'Auth\LoginController@getAuth')->name('getAuth');
+Route::post('auth', 'Auth\LoginController@postAuth')->name('postAuth');
+Route::get('logout', 'Auth\LoginController@logout')->name('logout');
 ```
 
 ## Screenshots
