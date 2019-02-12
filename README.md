@@ -1,4 +1,4 @@
-# Firebase Authentication package for Laravel PHP framework
+# Firebase Add-on for Laravel (Sidecar)
 
 ## Installation
 
