@@ -11,7 +11,7 @@
 
 You may install by running the `composer require` command in your terminal:
 ```
-composer require vinkas/firebase-auth-laravel
+composer require gbrits/firebase-auth-laravel
 ```
 
 **Add Service Provider to your `config/app.php` file**
