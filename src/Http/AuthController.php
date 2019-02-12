@@ -1,11 +1,11 @@
 <?php
 
-namespace Vinkas\Firebase\Auth\Http;
+namespace Gbrits\Firebase\Auth\Http;
 
-use Vinkas\Firebase\Auth\User;
+use Gbrits\Firebase\Auth\User;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Foundation\Auth\RegistersUsers;
-use Vinkas\Firebase\Auth\AuthenticatesUsers;
+use Gbrits\Firebase\Auth\AuthenticatesUsers;
 
 class AuthController extends Controller
 {
