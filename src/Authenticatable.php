@@ -17,7 +17,7 @@ class Authenticatable extends Model implements
   }
 
   public $incrementing = false;
-  protected $table = "firebase_users";
+  protected $table = "users";
 
   public function getAuthPassword() {
     return null;
