@@ -33,6 +33,12 @@ Gbrits\Firebase\Auth\ServiceProvider::class,
 php artisan vendor:publish --provider="Gbrits\Firebase\Auth\ServiceProvider"
 ```
 
+**Minor adjustment to `Http/Controllers/Auth/LoginController.php`**
+```
+use Gbrits\Firebase\Auth\Http\AuthController as BaseController;
+class LoginController extends BaseController
+```
+
 **Add some routes to `web.php`**
 
 ```
