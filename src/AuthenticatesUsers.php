@@ -1,6 +1,6 @@
 <?php
 
-namespace Vinkas\Firebase\Auth;
+namespace Gbrits\Firebase\Auth;
 
 use Firebase\JWT\JWT;
 use Illuminate\Http\Request;
