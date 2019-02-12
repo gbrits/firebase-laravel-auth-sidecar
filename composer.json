@@ -1,5 +1,5 @@
 {
-    "name": "gbrits/firebase-auth-laravel",
+    "name": "gbrits/firebase-laravel-auth-sidecar",
     "description": "Firebase Auth Add-on for Laravel",
     "keywords": ["firebase", "auth", "authentication", "laravel", "gbrits"],
     "type": "library",
