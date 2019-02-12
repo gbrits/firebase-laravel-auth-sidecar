@@ -1,6 +1,6 @@
 <?php
 
-namespace Vinkas\Firebase\Auth;
+namespace Gbrits\Firebase\Auth;
 
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Auth\Authenticatable as AuthenticatableTrait;
