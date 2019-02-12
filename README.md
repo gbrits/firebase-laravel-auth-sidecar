@@ -1,3 +1,5 @@
+[![Total Downloads](https://poser.pugx.org/gbrits/firebase-laravel-auth-sidecar/downloads)](https://packagist.org/packages/gbrits/firebase-laravel-auth-sidecar)
+
 # Firebase Add-on for Laravel (Sidecar)
 
 ## Installation
