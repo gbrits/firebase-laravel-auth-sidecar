@@ -11,7 +11,7 @@ You may install by running the `composer require` command in your terminal:
 composer require gbrits/firebase-laravel-auth-sidecar
 ```
 
-**Add your firebase project id, api key and auth domain in `.env` file**
+**Add your Firebase project ID, API key and auth domain into your `.env`**
 
 ```
 FIREBASE_PROJECT_ID=__________
@@ -19,20 +19,27 @@ FIREBASE_API_KEY=__________
 FIREBASE_AUTH_DOMAIN=__________
 ```
 
-** Add Service Provider to your `config/app.php` file**
+**Add the service provider to your `config/app.php`**
 
 ```
 Gbrits\Firebase\Auth\ServiceProvider::class,
 ```
 
-** Run `php artisan config:cache` to commit env variables **
+**Clear the cache `php artisan config:cache`**
 
-** Publish vendor files **
+**Publish vendor files**
 
 ```
 php artisan vendor:publish --provider="Gbrits\Firebase\Auth\ServiceProvider"
 ```
 
+**Add some routes**
+
+```
+Route::get('auth', 'Auth\AuthController@getAuth')->name('getAuth');
+Route::post('auth', 'Auth\AuthController@postAuth')->name('postAuth');
+Route::get('logout', 'Auth\AuthController@logout')->name('logout');
+```
 
 ## Screenshots
 
