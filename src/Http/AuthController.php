@@ -20,7 +20,7 @@ class AuthController extends Controller
     |
     */
 
-    use RegistersUsers, AuthenticatesUsers;
+    use AuthenticatesUsers;
 
     /**
      * Where to redirect users after login / registration.
@@ -64,7 +64,7 @@ class AuthController extends Controller
     protected function create(array $data)
     {
         return User::create([
-            'id' => $data['id'],
+            'firebase_uid' => $data['uid'],
             'name' => $data['name'],
             'email' => $data['email'],
             'photo_url' => $data['photo_url'],
