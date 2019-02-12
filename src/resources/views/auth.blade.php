@@ -10,7 +10,7 @@
   </title>
 
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
-  <link rel="stylesheet" href="/vinkas/firebase/auth.css" />
+  <link rel="stylesheet" href="/gbrits/firebase/auth.css" />
 </head>
 <body>
   <header id="header">
@@ -43,14 +43,14 @@
   <script>
   var token = "{{ csrf_token() }}";
   var config = {
-    apiKey: "{{ config('vinkas.firebase.auth.api_key') }}",
-    authDomain: "{{ config('vinkas.firebase.auth.auth_domain') }}",
+    apiKey: "{{ config('gbrits.firebase.auth.api_key') }}",
+    authDomain: "{{ config('gbrits.firebase.auth.auth_domain') }}",
   };
   firebase.initializeApp(config);
   </script>
   @if (Auth::check())
   @else
-  <script src='/vinkas/firebase/auth.js'></script>
+  <script src='/gbrits/firebase/auth.js'></script>
   @endif
   <script>
   function notice(message) {
@@ -63,10 +63,7 @@
   var uiConfig = {
     'signInSuccessUrl': '/',
     'signInOptions': [
-      firebase.auth.GoogleAuthProvider.PROVIDER_ID,
       firebase.auth.FacebookAuthProvider.PROVIDER_ID,
-      firebase.auth.TwitterAuthProvider.PROVIDER_ID,
-      firebase.auth.GithubAuthProvider.PROVIDER_ID,
       firebase.auth.EmailAuthProvider.PROVIDER_ID
     ],
     'tosUrl': null,
@@ -75,7 +72,7 @@
         if (currentUser.emailVerified) {
           auth(currentUser, token);
         } else {
-          notice("{!! trans('vinkas.firebase.auth.warning_verify_email') !!}");
+          notice("{!! trans('gbrits.firebase.auth.warning_verify_email') !!}");
         }
         return false;
       }
