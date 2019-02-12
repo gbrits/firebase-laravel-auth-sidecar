@@ -6,7 +6,7 @@
 
 You may install by running the `composer require` command in your terminal:
 ```
-composer require gbrits/firebase-auth-laravel
+composer require gbrits/firebase-laravel-auth-sidecar
 ```
 
 **Add Service Provider to your `config/app.php` file**
