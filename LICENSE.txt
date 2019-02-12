@@ -1,6 +1,6 @@
 The MIT License (MIT)
 
-Copyright (c) 2016 Vinoth Kannan <vinothkannan@vinkas.com>, Vinkas <http://vinkas.com>
+Copyright (c) 2019 Grant Brits <grant@maximus.agency>, Maximus Agency <http://maximus.agency>
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
