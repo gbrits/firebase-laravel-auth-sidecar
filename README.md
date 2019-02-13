@@ -3,7 +3,7 @@
 [![Monthly Downloads](https://poser.pugx.org/gbrits/firebase-laravel-auth-sidecar/d/monthly)](https://packagist.org/packages/gbrits/firebase-laravel-auth-sidecar)
 [![Daily Downloads](https://poser.pugx.org/gbrits/firebase-laravel-auth-sidecar/d/daily)](https://packagist.org/packages/gbrits/firebase-laravel-auth-sidecar)
 [![License](https://poser.pugx.org/gbrits/firebase-laravel-auth-sidecar/license)](https://packagist.org/packages/gbrits/firebase-laravel-auth-sidecar)
-[![GitHub release](https://img.shields.io/github/release/Naereen/StrapDown.js.svg)](https://GitHub.com/Naereen/StrapDown.js/releases/)
+[![GitHub release](https://img.shields.io/github/release/Naereen/StrapDown.js.svg)](https://packagist.org/packages/gbrits/firebase-laravel-auth-sidecar)
 
 # Firebase Laravel Auth Sidecar
 
