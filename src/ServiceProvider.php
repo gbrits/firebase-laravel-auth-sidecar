@@ -14,7 +14,7 @@ class ServiceProvider extends BaseServiceProvider {
   */
   public function boot()
   {
-    Blade::directive('firebaseuiheader', function() {
+    Blade::directive('firebaseuiheader', function( $config ) {
       return view('gbrits.firebase.header');
     });
     Blade::directive('firebaseuiwidget', function() {
