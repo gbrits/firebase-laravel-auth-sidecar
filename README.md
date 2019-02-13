@@ -42,9 +42,23 @@ class LoginController extends BaseController
 #### Add some routes to `web.php`
 
 ```
-Route::get('auth', 'Auth\LoginController@getAuth')->name('getAuth');
 Route::post('auth', 'Auth\LoginController@postAuth')->name('postAuth');
 Route::get('logout', 'Auth\LoginController@logout')->name('logout');
+```
+
+#### Add some Blade components to your existing layout
+
+##### To be placed in the header:
+```
+@firebaseuiheader
+```
+##### To be placed in the body:
+```
+@firebaseuiwidget
+```
+##### To be placed in the footer:
+```
+@firebaseuifooter
 ```
 
 #### Screenshots
