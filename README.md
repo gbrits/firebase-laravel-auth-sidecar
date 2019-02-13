@@ -6,8 +6,11 @@
 
 <div align="center" style="text-align: center">
   <h1>Firebase Add-on for Laravel (Sidecar)</h1>
-  ![Google Latched onto Laravel](/screenshots/sidecar.jpg)
 </div>
+
+<p align="center">
+![Google Latched onto Laravel](/screenshots/sidecar.jpg)
+</p>
 
 ## Installation
 
