@@ -10,6 +10,8 @@
 
 ## Installation
 
+Please keep in mind this is not a 'one-size-fits-all' installation that just handles everything for you. You could have Laravel Nova installed or any number of custom modifications to your user table - you will have to make minor adjustments to the 'AuthController' in the vendor files to fit your installation. Please do not log issues with questions, you can email me on github@maximus.agency.
+
 #### Via Composer Require
 
 You may install by running the `composer require` command in your terminal:
