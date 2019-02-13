@@ -4,9 +4,7 @@
 [![Daily Downloads](https://poser.pugx.org/gbrits/firebase-laravel-auth-sidecar/d/daily)](https://packagist.org/packages/gbrits/firebase-laravel-auth-sidecar)
 [![License](https://poser.pugx.org/gbrits/firebase-laravel-auth-sidecar/license)](https://packagist.org/packages/gbrits/firebase-laravel-auth-sidecar)
 
-<div align="center" style="text-align: center">
-  <h1>Firebase Add-on for Laravel (Sidecar)</h1>
-</div>
+# Firebase Laravel Auth Sidecar :tada: v1.0.5
 
 <p align="center">
 ![Google Latched onto Laravel](/screenshots/sidecar.jpg)
