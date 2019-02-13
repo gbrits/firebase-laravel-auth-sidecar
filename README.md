@@ -16,9 +16,12 @@ composer require gbrits/firebase-laravel-auth-sidecar
 #### Add your Firebase project ID, API key and auth domain into your `.env`
 
 ```
-FIREBASE_PROJECT_ID=__________
-FIREBASE_API_KEY=__________
-FIREBASE_AUTH_DOMAIN=__________
+FIREBASE_API_KEY=AIzXXgibberxJf4_5rlradjabberTsMpX
+FIREBASE_AUTH_DOMAIN=acme.firebaseapp.com
+FIREBASE_DATABASE_URL=https://acme.firebaseio.com
+FIREBASE_PROJECT_ID=acme
+FIREBASE_STORAGE_BUCKET=acme.appspot.com
+FIREBASE_MESSAGING_SENDER_ID=800813513371
 ```
 
 #### Add the service provider to your `config/app.php`
