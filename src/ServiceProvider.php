@@ -13,11 +13,14 @@ class ServiceProvider extends BaseServiceProvider {
   */
   public function boot()
   {
-    Blade::directive('firebasescripts', function() {
-      return view('gbrits.firebase.scripts');
+    Blade::directive('firebaseuiheader', function() {
+      return view('gbrits.firebase.header');
     });
-    Blade::directive('firebaseui', function() {
-      return view('gbrits.firebase.auth');
+    Blade::directive('firebaseuiwidget', function() {
+      return view('gbrits.firebase.widget');
+    });
+    Blade::directive('firebaseuifooter', function() {
+      return view('gbrits.firebase.footer');
     });
     $this->publishes([
       __DIR__.'/config/firebase.php' => config_path('gbrits/firebase/auth.php'),
