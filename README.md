@@ -1,10 +1,10 @@
-<div align="center" style="text-align: center">
 [![Latest Stable Version](https://poser.pugx.org/gbrits/firebase-laravel-auth-sidecar/v/stable)](https://packagist.org/packages/gbrits/firebase-laravel-auth-sidecar)
 [![Total Downloads](https://poser.pugx.org/gbrits/firebase-laravel-auth-sidecar/downloads)](https://packagist.org/packages/gbrits/firebase-laravel-auth-sidecar)
 [![Monthly Downloads](https://poser.pugx.org/gbrits/firebase-laravel-auth-sidecar/d/monthly)](https://packagist.org/packages/gbrits/firebase-laravel-auth-sidecar)
 [![Daily Downloads](https://poser.pugx.org/gbrits/firebase-laravel-auth-sidecar/d/daily)](https://packagist.org/packages/gbrits/firebase-laravel-auth-sidecar)
 [![License](https://poser.pugx.org/gbrits/firebase-laravel-auth-sidecar/license)](https://packagist.org/packages/gbrits/firebase-laravel-auth-sidecar)
 
+<div align="center" style="text-align: center">
 # Firebase Add-on for Laravel (Sidecar)
 
 ![Google Latched onto Laravel](/screenshots/sidecar.jpg)
