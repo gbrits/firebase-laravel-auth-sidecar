@@ -32,16 +32,8 @@ class ServiceProvider extends BaseServiceProvider {
     ], 'migrations');
 
     $this->publishes([
-        __DIR__.'/assets' => public_path('gbrits/firebase'),
-    ], 'public');
-
-    $this->publishes([
         __DIR__.'/resources/views' => resource_path('views/gbrits/firebase'),
     ], 'views');
-
-    $this->publishes([
-        __DIR__.'/resources/lang' => resource_path('lang/gbrits/firebase'),
-    ], 'lang');
   }
 
   /**
