@@ -3,7 +3,6 @@
 [![Monthly Downloads](https://poser.pugx.org/gbrits/firebase-laravel-auth-sidecar/d/monthly)](https://packagist.org/packages/gbrits/firebase-laravel-auth-sidecar)
 [![Daily Downloads](https://poser.pugx.org/gbrits/firebase-laravel-auth-sidecar/d/daily)](https://packagist.org/packages/gbrits/firebase-laravel-auth-sidecar)
 [![License](https://poser.pugx.org/gbrits/firebase-laravel-auth-sidecar/license)](https://packagist.org/packages/gbrits/firebase-laravel-auth-sidecar)
-[![GitHub release](https://img.shields.io/github/release/Naereen/StrapDown.js.svg)](https://packagist.org/packages/gbrits/firebase-laravel-auth-sidecar)
 
 # Firebase Laravel Auth Sidecar
 
@@ -11,7 +10,7 @@
 
 ## Installation
 
-#### Via Composer Require :tada:
+#### Via Composer Require
 
 You may install by running the `composer require` command in your terminal:
 ```
@@ -54,7 +53,7 @@ Route::post('auth', 'Auth\LoginController@postAuth')->name('postAuth');
 Route::get('logout', 'Auth\LoginController@logout')->name('logout');
 ```
 
-#### Add some Blade components to your existing layout
+#### :tada: Add some *Blade* components to your existing layout
 
 ##### To be placed in the header:
 ```
