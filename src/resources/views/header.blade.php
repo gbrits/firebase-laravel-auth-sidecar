@@ -2,12 +2,12 @@
 <script>
   var token = "{{ csrf_token() }}";
   var config = {
-    apiKey: "{{ config('gbrits.firebase.api_key') }}",
-    authDomain: "{{ config('gbrits.firebase.auth_domain') }}",
-    databaseURL: "{{ config('gbrits.firebase.database_url') }}",
-    projectId: "{{ config('gbrits.firebase.project_id') }}",
-    storageBucket: "{{ config('gbrits.firebase.storage_bucket') }}",
-    messagingSenderId: "{{ config('gbrits.firebase.messaging_sender_id') }}"
+    apiKey: "{{ config('gbrits.firebase.auth.api_key') }}",
+    authDomain: "{{ config('gbrits.firebase.auth.auth_domain') }}",
+    databaseURL: "{{ config('gbrits.firebase.auth.database_url') }}",
+    projectId: "{{ config('gbrits.firebase.auth.project_id') }}",
+    storageBucket: "{{ config('gbrits.firebase.auth.storage_bucket') }}",
+    messagingSenderId: "{{ config('gbrits.firebase.auth.messaging_sender_id') }}"
   };
   firebase.initializeApp(config);
 </script>
@@ -28,7 +28,15 @@ var uiConfig = {
       } else {
         alert('This user still needs to be verified.');
         firebase.auth().onAuthStateChanged(function(user) {
-          user.sendEmailVerification();
+          if (user.emailVerified) {
+            console.log('Email is verified');
+            window.verifiedEmail = true;
+          }
+          else {
+            console.log('Email is not verified');
+            window.verifiedEmail = false;
+            user.sendEmailVerification();
+          }
         });
       }
       return false;
