@@ -5,9 +5,8 @@
 [![License](https://poser.pugx.org/gbrits/firebase-laravel-auth-sidecar/license)](https://packagist.org/packages/gbrits/firebase-laravel-auth-sidecar)
 
 <div align="center" style="text-align: center">
-# Firebase Add-on for Laravel (Sidecar)
-
-![Google Latched onto Laravel](/screenshots/sidecar.jpg)
+  <h1>Firebase Add-on for Laravel (Sidecar)</h1>
+  ![Google Latched onto Laravel](/screenshots/sidecar.jpg)
 </div>
 
 ## Installation
