@@ -7,9 +7,7 @@
 
 # Firebase Laravel Auth Sidecar
 
-<p align="center">
 ![Google Latched onto Laravel](/screenshots/sidecar.jpg)
-</p>
 
 ## Installation
 
