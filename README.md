@@ -3,7 +3,7 @@
 [![Monthly Downloads](https://poser.pugx.org/gbrits/firebase-laravel-auth-sidecar/d/monthly)](https://packagist.org/packages/gbrits/firebase-laravel-auth-sidecar)
 [![Daily Downloads](https://poser.pugx.org/gbrits/firebase-laravel-auth-sidecar/d/daily)](https://packagist.org/packages/gbrits/firebase-laravel-auth-sidecar)
 [![License](https://poser.pugx.org/gbrits/firebase-laravel-auth-sidecar/license)](https://packagist.org/packages/gbrits/firebase-laravel-auth-sidecar)
-[![Donate](https://img.shields.io/badge/Donate-PayPal-green.svg)](3TGHRLQAXRL6L)
+[![Donate](https://img.shields.io/badge/Donate-PayPal-green.svg)](https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=3TGHRLQAXRL6L&currency_code=AUD&source=url)
 
 # Firebase Laravel Auth Sidecar
 
@@ -97,10 +97,6 @@ Specifically in that order, as the Laravel directives utilise config values. Be 
 * [Firebase php JWT](https://github.com/firebase/php-jwt)
 * [FirebaseUI Web](https://github.com/firebase/firebaseui-web)
 
+#### Donate
 
-
-#### Did I help you out? Help me out
-
-[![Donate](https://img.shields.io/badge/Donate-PayPal-green.svg)](3TGHRLQAXRL6L)
-
-Oh go on, buy me a beer. Or a sugarfree Rockstar. 
+Oh go on, [buy me a beer](https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=3TGHRLQAXRL6L&currency_code=AUD&source=url). Or a sugarfree Rockstar. 
