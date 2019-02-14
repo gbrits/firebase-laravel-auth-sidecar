@@ -79,7 +79,7 @@ Route::get('logout', 'Auth\LoginController@logout')->name('logout');
 @firebaseuifooter
 ```
 
-#### Everything is now good to go, one final step. Clear the config cache and then clear the view cache. In that order:
+#### :tada: Finally, clear the config cache and then clear the view cache. In that order:
 
 ```
 php artisan config:cache
