@@ -1,6 +1,12 @@
 <script>
-function auth(user, token) {
-  user.getToken(true).then(function(idToken) {
+$.ajaxSetup({
+    headers: {
+        'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+    }
+});
+function auth(user) {
+  console.log('Initiating Laravel user creation...');
+  user.getIdToken(true).then(function(idToken) {
     $.ajax({
       url: '/auth',
       type: "post",
@@ -8,23 +14,21 @@ function auth(user, token) {
         'id_token': idToken,
         'name': user.displayName,
         'email': user.email,
-        'photo_url': user.photoURL,
-        '_token': token
+        'photo_url': user.photoURL
       },
-      success: function(data){
+      success: function(data) {
         if(data.success) {
           window.location.replace(data.redirectTo);
-        }
-        else {
-          alert(data.message);
+        } else {
+          // Handle Firebase error
         }
       },
       error: function(xhr, textStatus, errorThrown) {
-        alert(textStatus);
+        // Handle Laravel error
       }
     });
   }).catch(function(error) {
-    alert(error);
+    // Handle exception
   });
 }
 </script>
