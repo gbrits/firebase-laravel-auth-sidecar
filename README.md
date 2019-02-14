@@ -34,7 +34,7 @@ FIREBASE_MESSAGING_SENDER_ID=800813513371
 Gbrits\Firebase\Auth\ServiceProvider::class,
 ```
 
-#### Clear the cache `php artisan config:cache` and publish vendor files (Blade directive views)
+#### Publish vendor files (Blade directive views)
 
 ```
 php artisan vendor:publish --provider="Gbrits\Firebase\Auth\ServiceProvider"
@@ -63,7 +63,7 @@ Route::post('auth', 'Auth\LoginController@postAuth')->name('postAuth');
 Route::get('logout', 'Auth\LoginController@logout')->name('logout');
 ```
 
-#### :tada: Add some *Blade* components to your existing layout
+#### Add some *Blade* components to your existing layout
 
 ##### To be placed in the header:
 ```
@@ -78,6 +78,15 @@ Route::get('logout', 'Auth\LoginController@logout')->name('logout');
 @firebaseuifooter
 ```
 
+#### Everything is now good to go, one final step. Clear the config cache and then clear the view cache. In that order:
+
+```
+php artisan config:cache
+php artisan view:cache
+```
+
+Specifically in that order, as the Laravel directives utilise config values. Be sure to clear the view cache with every alteration you make to the directive views (in the vendor files), otherwise your changes won't apply.
+
 #### Screenshots
 
 ![FirebaseUI Web](/screenshots/sign-in-providers.png)
@@ -86,3 +95,15 @@ Route::get('logout', 'Auth\LoginController@logout')->name('logout');
 
 * [Firebase php JWT](https://github.com/firebase/php-jwt)
 * [FirebaseUI Web](https://github.com/firebase/firebaseui-web)
+
+#### Did I help you out? Help me out
+
+Oh go on, buy me a beer. Or a sugarfree Rockstar.
+
+<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+<input type="hidden" name="cmd" value="_donations" />
+<input type="hidden" name="business" value="3TGHRLQAXRL6L" />
+<input type="hidden" name="currency_code" value="AUD" />
+<input type="image" src="https://www.paypalobjects.com/en_AU/i/btn/btn_donate_LG.gif" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button" />
+<img alt="" border="0" src="https://www.paypal.com/en_AU/i/scr/pixel.gif" width="1" height="1" />
+</form>
