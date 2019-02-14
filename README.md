@@ -98,12 +98,5 @@ Specifically in that order, as the Laravel directives utilise config values. Be 
 
 #### Did I help you out? Help me out
 
-Oh go on, buy me a beer. Or a sugarfree Rockstar.
-
-<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
-<input type="hidden" name="cmd" value="_donations" />
-<input type="hidden" name="business" value="3TGHRLQAXRL6L" />
-<input type="hidden" name="currency_code" value="AUD" />
-<input type="image" src="https://www.paypalobjects.com/en_AU/i/btn/btn_donate_LG.gif" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button" />
-<img alt="" border="0" src="https://www.paypal.com/en_AU/i/scr/pixel.gif" width="1" height="1" />
-</form>
+[![Donate](https://img.shields.io/badge/Donate-PayPal-green.svg)](3TGHRLQAXRL6L)
+Oh go on, buy me a beer. Or a sugarfree Rockstar. 
