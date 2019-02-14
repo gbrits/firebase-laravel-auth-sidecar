@@ -24,18 +24,19 @@ var uiConfig = {
   'callbacks': {
     'signInSuccessWithAuthResult': function(currentUser, credential, redirectUrl) {
       if (currentUser.emailVerified) {
-        auth(currentUser, token);
+        auth(currentUser);
       } else {
-        alert('This user still needs to be verified.');
-        firebase.auth().onAuthStateChanged(function(user) {
-          if (user.emailVerified) {
+        firebase.auth().onAuthStateChanged(function(currentUser) {
+          if (currentUser.emailVerified) {
             console.log('Email is verified');
             window.verifiedEmail = true;
+            auth(currentUser, token); // Create Laravel counterpart
           }
           else {
             console.log('Email is not verified');
             window.verifiedEmail = false;
-            user.sendEmailVerification();
+            currentUser.sendEmailVerification();
+            $('#firebaseui-response').html('<div class="alert alert-success text-center" role="alert">An email has been sent to verify your account<br />Check your spam folder if you haven\'t received it</div>');
           }
         });
       }
