@@ -3,6 +3,7 @@
 [![Monthly Downloads](https://poser.pugx.org/gbrits/firebase-laravel-auth-sidecar/d/monthly)](https://packagist.org/packages/gbrits/firebase-laravel-auth-sidecar)
 [![Daily Downloads](https://poser.pugx.org/gbrits/firebase-laravel-auth-sidecar/d/daily)](https://packagist.org/packages/gbrits/firebase-laravel-auth-sidecar)
 [![License](https://poser.pugx.org/gbrits/firebase-laravel-auth-sidecar/license)](https://packagist.org/packages/gbrits/firebase-laravel-auth-sidecar)
+[![Donate](https://img.shields.io/badge/Donate-PayPal-green.svg)](3TGHRLQAXRL6L)
 
 # Firebase Laravel Auth Sidecar
 
@@ -99,4 +100,5 @@ Specifically in that order, as the Laravel directives utilise config values. Be 
 #### Did I help you out? Help me out
 
 [![Donate](https://img.shields.io/badge/Donate-PayPal-green.svg)](3TGHRLQAXRL6L)
+
 Oh go on, buy me a beer. Or a sugarfree Rockstar. 
