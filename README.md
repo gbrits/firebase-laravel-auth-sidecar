@@ -36,16 +36,26 @@ FIREBASE_MESSAGING_SENDER_ID=800813513371
 Gbrits\Firebase\Auth\ServiceProvider::class,
 ```
 
-#### Clear the cache `php artisan config:cache` and publish vendor files
+#### Clear the cache `php artisan config:cache` and publish vendor files (Blade directive views)
 
 ```
 php artisan vendor:publish --provider="Gbrits\Firebase\Auth\ServiceProvider"
 ```
 
-#### Minor adjustment to `Http/Controllers/Auth/LoginController.php`
+#### Minor adjustment to include the trait `Http/Controllers/Auth/LoginController.php`
+
 ```
-use Gbrits\Firebase\Auth\Http\AuthController as BaseController;
-class LoginController extends BaseController
+use Gbrits\Firebase\Auth\AuthenticatesUsers;
+class LoginController extends Controller {
+  use RegistersUsers, AuthenticatesUsers, ValidatesRequests;
+```
+
+### Add fillable Firebase fields to your user model `App/User.php`
+
+```
+$fillable = [
+  ~ all your other fields ~, 'id_token', 'photo_url'
+];
 ```
 
 #### Add some routes to `web.php`
